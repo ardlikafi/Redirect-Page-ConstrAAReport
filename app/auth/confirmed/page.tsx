@@ -4,11 +4,10 @@ import { CheckCircle2, Smartphone } from 'lucide-react';
 
 export default function ConfirmedPage() {
     const handleOpenApp = () => {
-        // Skema URL Deep Link aplikasi Flutter Anda (ganti sesuai konfigurasi di Flutter)
-        // Misalnya: constraareports://login
+        // Skema URL Deep Link untuk aplikasi mobile
         window.location.href = 'constraareports://login';
 
-        // Fallback jika aplikasi tidak terinstal, beri waktu beberapa detik lalu beri tahu user
+        // Fallback jika aplikasi mobile tidak mendeteksi deep link dalam waktu tertentu
         setTimeout(() => {
             alert("Jika aplikasi tidak terbuka, pastikan aplikasi ConstrAAReports sudah terinstal di HP Anda.");
         }, 2500);
